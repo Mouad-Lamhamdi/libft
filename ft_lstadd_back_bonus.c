@@ -6,7 +6,7 @@
 /*   By: molamham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 11:07:35 by molamham          #+#    #+#             */
-/*   Updated: 2024/11/13 11:30:49 by molamham         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:12:44 by molamham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list *last;
 
-	last = ft_lstlast(*lst);
-	if (!last)
-		last = new;
-	last->next = new;
+	if (!*lst)
+		*lst = new;
+	else
+	{
+		last = ft_lstlast(*lst);
+		last->next = new;
+	}
 }

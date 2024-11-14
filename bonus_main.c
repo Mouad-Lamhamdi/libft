@@ -1,5 +1,10 @@
 #include "libft.h"
 
+void del_content(void *content)
+{
+	free(content);
+}
+
 static void	print_list(t_list *lst)
 {
 	t_list *current;
@@ -27,11 +32,7 @@ int main()
 	ft_lstadd_back(&head, node2);
 	ft_lstadd_back(&head, node3);
 	ft_lstadd_front(&head, ft_lstnew("Front"));
-	printf("%d\n", ft_lstsize(head));
-	while (head)
-	{
-		printf("%s\n", head->content);
-		head = head->next;
-	}
-	free(head);
+	print_list(head);
+	ft_lstdelone(head, del_content);
+	print_list(head);
 }
