@@ -6,7 +6,7 @@
 /*   By: molamham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 11:46:25 by molamham          #+#    #+#             */
-/*   Updated: 2024/10/31 14:21:03 by molamham         ###   ########.fr       */
+/*   Updated: 2024/11/16 21:36:23 by molamham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,8 @@ void	*ft_memmove(void *dest, void *src, size_t len)
 	src1 = (char *)src;
 	if (dest <= src)
 	{
-		while (len)
-		{
+		while (len--)
 			*dest1++ = *src1++;
-			len--;
-		}
 	}
 	else if (dest > src)
 	{
