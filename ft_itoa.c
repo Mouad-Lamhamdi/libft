@@ -6,7 +6,7 @@
 /*   By: molamham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 13:32:57 by molamham          #+#    #+#             */
-/*   Updated: 2024/11/16 15:14:32 by molamham         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:05:43 by molamham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,9 @@ char	*ft_itoa(int n)
 	if (i == 0)
 	{
 		str = malloc (2 * sizeof(char));
-		str[0] = i + 48;
+		if (!str)
+			return (NULL);
+		str[0] = '0';
 		str[1] = '\0';
 	}
 	else if (i == -2147483648)

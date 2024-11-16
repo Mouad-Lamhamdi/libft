@@ -6,7 +6,7 @@
 /*   By: molamham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 20:25:50 by molamham          #+#    #+#             */
-/*   Updated: 2024/11/16 13:18:58 by molamham         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:58:33 by molamham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ static char	**copy_alloc(const char *s, int words, char **arr, char c)
 			len++;
 		}
 		arr[i] = malloc (sizeof(char) * (len + 1));
-		if (!arr)
+		if (!arr[i])
 		{
 			ft_free(arr);
 			return (NULL);
