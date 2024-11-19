@@ -6,7 +6,7 @@
 /*   By: molamham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 13:38:28 by molamham          #+#    #+#             */
-/*   Updated: 2024/11/16 11:55:28 by molamham         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:19:20 by molamham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	i;
 
-	if (!s1 || !set)
+	if (!s1)
 		return (NULL);
+	if (!set)
+		return (ft_strdup((const char *)s1));
 	i = 0;
 	start = 0;
 	end = ft_strlen(s1);

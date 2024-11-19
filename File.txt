@@ -1,0 +1,131 @@
+ft_memset.c:33:17: warning: incompatible integer to pointer conversion initializing 'unsigned char *' with an expression of type 'unsigned char' [-Wint-conversion]
+        unsigned char *pa = (unsigned char)&a;
+                       ^    ~~~~~~~~~~~~~~~~~
+ft_memset.c:34:17: warning: incompatible integer to pointer conversion initializing 'unsigned char *' with an expression of type 'unsigned char' [-Wint-conversion]
+        unsigned char *pb = (unsigned char)&b;
+                       ^    ~~~~~~~~~~~~~~~~~
+2 warnings generated.
+ft_memset.c:33:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pa = &a;
+                       ^    ~~
+ft_memset.c:34:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pb = &b;
+                       ^    ~~
+2 warnings generated.
+ft_memset.c:33:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pa = &a;
+                       ^    ~~
+ft_memset.c:34:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pb = &b;
+                       ^    ~~
+ft_memset.c:38:13: warning: incompatible integer to pointer conversion passing 'unsigned char' to parameter of type 'void *' [-Wint-conversion]
+                ft_memset(pa[i], pb[i], 1);
+                          ^~~~~
+ft_memset.c:15:23: note: passing argument to parameter 'b' here
+void    *ft_memset(void *b, int c, size_t len)
+                         ^
+3 warnings generated.
+ft_memset.c:33:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pa = &a;
+                       ^    ~~
+ft_memset.c:34:17: warning: incompatible pointer types initializing 'unsigned char *' with an expression of type 'int *' [-Wincompatible-pointer-types]
+        unsigned char *pb = &b;
+                       ^    ~~
+2 warnings generated.
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+1 error generated.
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+1 error generated.
+zsh: no such file or directory: ./p
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
+zsh: no such file or directory: ./p
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
+zsh: no such file or directory: ./p
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
+ft_lstmap_bonus.c:27:6: error: expected ';' after expression
+                p++
+                   ^
+                   ;
+ft_lstmap_bonus.c:51:18: warning: format specifies type 'int' but the argument has type 'void *' [-Wformat]
+                printf("%c\n", new_list->content);
+                        ~~     ^~~~~~~~~~~~~~~~~
+ft_lstmap_bonus.c:64:17: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        first->content = 'a';
+                       ^ ~~~
+ft_lstmap_bonus.c:65:18: warning: incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]
+        second->content = 'b';
+                        ^ ~~~
+3 warnings and 1 error generated.
